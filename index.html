@@ -216,18 +216,20 @@
       </button>
     </div>
 
-    <div id="mobileNav" class="mobile-nav fixed inset-0 top-16 bg-white z-30 md:hidden" aria-label="手機導覽">
-      <nav class="flex flex-col p-6 gap-1">
-        <a href="#hero" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">首頁</a>
-        <a href="#about" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">里長簡介</a>
-        <a href="#services" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">服務項目</a>
-        <a href="#activities" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">活動紀錄</a>
-        <a href="#results" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">服務成果</a>
-        <a href="#links" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">常用連結</a>
-        <a href="#contact" class="mobile-link mt-2 px-4 py-3 text-base font-medium text-white bg-accent rounded-lg text-center">聯絡我們</a>
-      </nav>
-    </div>
   </header>
+
+  <!-- Mobile nav moved OUTSIDE header to avoid stacking context issues -->
+  <div id="mobileNav" class="mobile-nav fixed inset-0 top-16 bg-white z-50 md:hidden" aria-label="手機導覽">
+    <nav class="flex flex-col p-6 gap-1">
+      <a href="#hero" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">首頁</a>
+      <a href="#about" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">里長簡介</a>
+      <a href="#services" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">服務項目</a>
+      <a href="#activities" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">活動紀錄</a>
+      <a href="#results" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">服務成果</a>
+      <a href="#links" class="mobile-link px-4 py-3 text-base font-medium text-secondary hover:bg-surface rounded-lg">常用連結</a>
+      <a href="#contact" class="mobile-link mt-2 px-4 py-3 text-base font-medium text-white bg-accent rounded-lg text-center">聯絡我們</a>
+    </nav>
+  </div>
 
   <main id="main">
 
@@ -875,8 +877,7 @@
               </div>
               <div>
                 <h3 class="font-heading font-semibold text-white">服務時間</h3>
-                <p class="text-white/80">週一至週五 08:00–17:00</p>
-                <p class="text-white/60 text-sm mt-1">（實際時間請以里辦公處公告為準）</p>
+                <p class="text-white/80">實際時間請以里辦公處公告為準</p>
               </div>
             </div>
 
@@ -887,7 +888,6 @@
               <div>
                 <h3 class="font-heading font-semibold text-white">社群</h3>
                 <p class="text-sm"><a href="https://www.facebook.com/coco.lee.58" target="_blank" rel="noopener noreferrer" class="text-accent-light hover:text-white transition-colors">Facebook：李詠芳</a></p>
-                <p class="text-white/60 text-sm">LINE 連結（如有請補充）</p>
               </div>
             </div>
 
